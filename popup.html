@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PR Helper - Task Extractor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <h2>📋 Extracted Tasks</h2>
+      <button id="refresh-btn" class="refresh-btn" title="Refresh">🔄</button>
+    </div>
+    
+    <div id="loading" class="loading">
+      <p>Loading tasks...</p>
+    </div>
+    
+    <div id="error" class="error" style="display: none;">
+      <p>⚠️ Not on a GitHub PR page</p>
+      <p class="error-subtitle">Navigate to a Pull Request page to extract task IDs</p>
+    </div>
+    
+    <div id="content" class="popup-content" style="display: none;">
+      <div id="task-count" class="task-count"></div>
+      
+      <ul id="task-list" class="task-list"></ul>
+      
+      <div class="popup-actions">
+        <button id="copy-btn" class="copy-btn">📋 Copy Task IDs</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+

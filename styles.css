@@ -1,0 +1,173 @@
+/* PR Helper - Task Extractor Styles */
+
+.pr-helper-panel {
+  background: #ffffff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  margin: 16px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  max-width: 600px;
+}
+
+.pr-helper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f6f8fa;
+  border-bottom: 1px solid #d1d9e0;
+  border-radius: 6px 6px 0 0;
+}
+
+.pr-helper-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292f;
+}
+
+.pr-helper-toggle {
+  background: transparent;
+  border: 1px solid #d1d9e0;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  color: #24292f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.pr-helper-toggle:hover {
+  background: #e1e4e8;
+  border-color: #c6cbd1;
+}
+
+.pr-helper-content {
+  padding: 16px;
+}
+
+.pr-helper-empty {
+  color: #656d76;
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.pr-helper-task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.pr-helper-task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 4px 0;
+  background: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.pr-helper-task-item:hover {
+  background: #e1e4e8;
+}
+
+.pr-helper-task-id {
+  font-weight: 600;
+  color: #000000;
+  font-size: 14px;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+.pr-helper-commit-count {
+  font-size: 12px;
+  color: #656d76;
+  background: #ffffff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  border: 1px solid #d1d9e0;
+}
+
+.pr-helper-copy-btn {
+  width: 100%;
+  padding: 8px 16px;
+  background: #2da44e;
+  color: #ffffff;
+  border: 1px solid #2da44e;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.pr-helper-copy-btn:hover {
+  background: #2c974b;
+  border-color: #2c974b;
+}
+
+.pr-helper-copy-btn:active {
+  background: #298e46;
+  border-color: #298e46;
+}
+
+/* Dark mode support (GitHub's dark mode) */
+@media (prefers-color-scheme: dark) {
+  .pr-helper-panel {
+    background: #161b22;
+    border-color: #30363d;
+  }
+
+  .pr-helper-header {
+    background: #0d1117;
+    border-color: #30363d;
+  }
+
+  .pr-helper-header h3 {
+    color: #c9d1d9;
+  }
+
+  .pr-helper-toggle {
+    border-color: #30363d;
+    color: #c9d1d9;
+  }
+
+  .pr-helper-toggle:hover {
+    background: #21262d;
+    border-color: #484f58;
+  }
+
+  .pr-helper-empty {
+    color: #8b949e;
+  }
+
+  .pr-helper-task-item {
+    background: #0d1117;
+    border-color: #30363d;
+  }
+
+  .pr-helper-task-item:hover {
+    background: #161b22;
+  }
+
+  .pr-helper-task-id {
+    color: #000000;
+  }
+
+  .pr-helper-commit-count {
+    background: #161b22;
+    border-color: #30363d;
+    color: #8b949e;
+  }
+}
+
